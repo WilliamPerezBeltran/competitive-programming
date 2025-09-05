@@ -67,7 +67,9 @@ def split_order(sentence):
     return sentence.strip()
 
 # 11. Write a function that takes a sentence and returns the longest word.
-def split_order(sentence):
+def longest_word(sentence):
+    # max((len(x),x)[for x in sentence.split()])
+    # max(sentence.split(),key=len)
     mayor_len = None   
     for x in sentence:
         if len(x) > mayor:
@@ -77,20 +79,21 @@ def split_order(sentence):
     return sentence.split().sort()
 
 # 12. Check if two words are anagrams, for example "listen" and "silent".
-def split_order(sentence):
-    return sentence.split().sort()
+import collections
+def anagrams(sentence1,sentence2):
+    return collections.Counter(sentence1) == collections.Counter(sentence2)
 
 # 13. Count how many vowels a sentence has.
-def split_order(sentence):
-    return sentence.split().sort()
+def vowel(sentence):
+    return sum((1 for x in sentence.lower() if x in "aeiuo"))
 
 # 14. Encrypt a word using Caesar cipher, shifting letters by n positions.
-def split_order(sentence):
-    return sentence.split().sort()
+def Encrypt(sentence):
+    pass
 
 # 15. Convert a number into text, for example 123 becomes "one two three".
-def split_order(sentence):
-    return sentence.split().sort()
+def number_into_text(sentence):
+    pass
 
 
 
