@@ -64,10 +64,16 @@ def unique_characters(string):
 
 # 10. Remove spaces at the beginning and end of the string " Python ".
 def split_order(sentence):
-    return sentence.split().sort()
+    return sentence.strip()
 
 # 11. Write a function that takes a sentence and returns the longest word.
 def split_order(sentence):
+    mayor_len = None   
+    for x in sentence:
+        if len(x) > mayor:
+            mayor_len = len(x)
+            mayor = x
+
     return sentence.split().sort()
 
 # 12. Check if two words are anagrams, for example "listen" and "silent".
